@@ -1,6 +1,6 @@
 name: My First Work flow
 
-on: Push
+on: push
 
 jobs:
     first_job:
