@@ -12,7 +12,7 @@ jobs:
             ls -altr
             cat README.md
 
-        - name: List files
-          run: ls -ltr
-        - name: Read file
-          run: cat README.md
+#        - name: List files
+#          run: ls -ltr
+#        - name: Read file
+#          run: cat README.md
