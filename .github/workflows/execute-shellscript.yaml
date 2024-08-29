@@ -9,4 +9,6 @@ jobs:
         - name: list file
           run: ls -ltra
         - name: Execute shell script
-          run: ./script.sh
+          run: |
+            chmod 755 script.sh
+            ./script.sh
