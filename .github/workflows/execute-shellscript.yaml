@@ -1,0 +1,12 @@
+name: My Ascii Work flow
+on: push
+jobs:
+    ascii_job:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Checkout repo
+          uses: actions/checkout@v4
+        - name: list file
+          run: ls -ltra
+        - name: Execute shell script
+          run: ./../script.sh
