@@ -1,7 +1,5 @@
-name: My First Work flow
-
+name: My second Work flow
 on: push
-
 jobs:
     first_job:
         runs-on: ubuntu-latest
@@ -14,7 +12,7 @@ jobs:
             ls -altr
             cat README.md
 
-        #- name: List files
-        #  run: ls -ltr
-        #- name: Read file
-        #  run: cat README.md
+        - name: List files
+          run: ls -ltr
+        - name: Read file
+          run: cat README.md
