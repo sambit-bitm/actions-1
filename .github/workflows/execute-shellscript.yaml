@@ -13,4 +13,5 @@ jobs:
             chmod 755 script.sh
             ./script.sh
             echo "action_state=yellow" >> $GITHUB_ENV
+            echo "Dispalying env"
             cat $GITHUB_ENV
