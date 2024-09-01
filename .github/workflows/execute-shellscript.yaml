@@ -22,6 +22,7 @@ jobs:
             tar -zxvf yq_linux_amd64.tar.gz
             yq --version
             ls -ltr $GITHUB_WORKSPACE
+            chmod 777 $GITHUB_WORKSPACE/conf/dev.yaml
             ENV_FILE= $GITHUB_WORKSPACE/conf/dev.yaml
             echo $ENV_FILE
             name= $(./yq_linux_amd64 e .name ${{env.ENV_FILE}})
