@@ -21,3 +21,8 @@ jobs:
             wget https://github.com/mikefarah/yq/releases/download/v4.44.3/yq_linux_amd64.tar.gz
             tar -zxvf yq_linux_amd64.tar.gz
             yq --version
+            ls -ltr $GITHUB_WORKSPACE
+            ENV_FILE=$GITHUB_WORKSPACE/conf/dev.yaml
+            echo $ENV_FILE
+            name = $(yq e .name ${{env.ENV_FILE}})
+            echo $name
