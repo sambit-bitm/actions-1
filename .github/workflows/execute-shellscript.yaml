@@ -15,3 +15,5 @@ jobs:
             echo "action_state=yellow" >> $GITHUB_ENV
             echo "Dispalying env"
             cat $GITHUB_ENV
+            echo "Displaying the env variable"
+            echo ${{env.action_state}}
