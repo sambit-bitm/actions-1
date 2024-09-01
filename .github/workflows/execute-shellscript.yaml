@@ -10,11 +10,14 @@ jobs:
           run: ls -ltra
         - name: Execute shell script
           run: |
-            chmod 755 script.sh
-            ./script.sh
-            echo "action_state=yellow" >> $GITHUB_ENV
-            echo "Dispalying env"
-            cat $GITHUB_ENV
-            echo "Displaying the env variable"
-            echo ${{env.action_state}}>> variable.txt
-            cat variable.txt
+#            chmod 755 script.sh
+#            ./script.sh
+#            echo "action_state=yellow" >> $GITHUB_ENV
+#            echo "Dispalying env"
+#            cat $GITHUB_ENV
+#            echo "Displaying the env variable"
+#            echo ${{env.action_state}}>> variable.txt
+#            cat variable.txt
+            wget https://github.com/mikefarah/yq/releases/download/v4.44.3/yq_linux_amd64.tar.gz -O 
+            tar -zxvf yq_linux_amd64.tar.gz
+            yq --version
