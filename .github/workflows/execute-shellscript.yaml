@@ -25,5 +25,5 @@ jobs:
             chmod 777 $GITHUB_WORKSPACE/conf/dev.yaml
             ENV_FILE= $GITHUB_WORKSPACE/conf/dev.yaml
             echo $ENV_FILE
-            name= $(./yq_linux_amd64 ${{env.ENV_FILE}})
+            name= yq '.name' ${{env.ENV_FILE}}
             echo $name
