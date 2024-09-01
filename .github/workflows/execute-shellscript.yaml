@@ -16,4 +16,5 @@ jobs:
             echo "Dispalying env"
             cat $GITHUB_ENV
             echo "Displaying the env variable"
-            echo ${{env.action_state}}
+            echo ${{env.action_state}}>> variable.txt
+            cat variable.txt
