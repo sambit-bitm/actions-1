@@ -18,6 +18,6 @@ jobs:
             #echo "Displaying the env variable"
             #echo ${{env.action_state}}>> variable.txt
             #cat variable.txt
-            wget https://github.com/mikefarah/yq/releases/download/v4.44.3/yq_linux_amd64.tar.gz -O 
+            wget https://github.com/mikefarah/yq/releases/download/v4.44.3/yq_linux_amd64.tar.gz
             tar -zxvf yq_linux_amd64.tar.gz
             yq --version
