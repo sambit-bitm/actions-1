@@ -24,6 +24,6 @@ jobs:
             ls -ltr $GITHUB_WORKSPACE
             chmod 777 $GITHUB_WORKSPACE/conf/dev.yaml
             ENV_FILE= $GITHUB_WORKSPACE/conf/dev.yaml
-            echo $ENV_FILE
+            #echo $ENV_FILE
             name= yq '.name' ${{env.ENV_FILE}}
             echo $name
