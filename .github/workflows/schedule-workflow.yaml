@@ -1,6 +1,6 @@
 # Repo level env variables and secrets
 
-name: Explore variables and secrets at workflow level using schedule
+name:  schedule workflow
 on:
     #push
     schedule:
