@@ -3,7 +3,7 @@
 name:  schedule workflow
 on:
     schedule:
-    - corn: "*/1 * * * *"
+    - cron: "*/1 * * * *"
     #push
 
 env:
