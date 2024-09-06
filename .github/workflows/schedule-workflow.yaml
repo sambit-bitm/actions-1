@@ -1,9 +1,11 @@
 # Repo level env variables and secrets
 
-name:  schedule workflow
+name:  dispatch workflow
 on:
-    schedule:
-    - cron: "*/1 * * * *"
+    dispatch:
+    
+    #schedule:
+    #- cron: "*/1 * * * *"
     #push
 
 env:
