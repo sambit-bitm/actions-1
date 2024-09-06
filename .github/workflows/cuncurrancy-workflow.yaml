@@ -29,7 +29,6 @@ jobs:
     concurrency:
       group: production-group
       cancel-in-progress: true
-
     runs-on: ubuntu-latest
     steps:
     - name: Docker run
