@@ -21,4 +21,4 @@ jobs:
     hello:
         runs-on: ubuntu-latest
         steps:
-            - run: echo this worflow is run for even type ${{ github.event_name}}
+            - run: echo this worflow is run for even type ${{ github.event_name}} for testing
