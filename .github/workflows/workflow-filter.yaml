@@ -1,0 +1,24 @@
+name: worflow filter and activities
+on:
+    workflow_dispatch: 
+    push:
+        #branches-ignore: 
+        #-   feature/*
+        #-   test/*
+        branches: 
+        -   main
+        - '!feature/*'
+    pull_request:
+        types:
+        -   closed
+        -   opened
+        paths-ignore: 
+        -   README.md
+        branches: 
+        -   main
+
+jobs: 
+    hello:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo this worflow is run for even type ${{ github.event_name}}
